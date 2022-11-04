@@ -9,7 +9,7 @@ order by OrderDate
 limit 10
 
 Result: 
-https://github.com/vollmerivan/SQL/blob/main/assets/1.jpg
+(https://github.com/vollmerivan/SQL/blob/main/assets/1.jpg)
 
 2. Составьте SQL запрос:
 Выбрать все категории с ИД от 2 до 7
@@ -23,4 +23,4 @@ where CategoryID>1 and CategoryID<8
 order by CategoryID desc
 
 Result: 
-https://github.com/vollmerivan/SQL/blob/main/assets/2.jpg
+(https://github.com/vollmerivan/SQL/blob/main/assets/2.jpg)
