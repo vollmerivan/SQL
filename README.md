@@ -1,1 +1,22 @@
 # SQL
+
+1. Напишите SQL запрос, который выведет 10 заказов, отсортированных по убыванию даты их создания (OrderDate). 
+Выполнение задание было на сайте https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_add
+
+select OrderID, OrderDate, Customers.Customername from orders
+join Customers ON Orders.CustomerID = Customers.CustomerID
+order by OrderDate
+limit 10
+
+
+
+2. Составьте SQL запрос:
+Выбрать все категории с ИД от 2 до 7
+Таблица Categories, условие фильтрации CategoryID.
+(*) -  сортировка в порядке убывания .
+
+Выполнение задание было на сайте https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_add
+
+SELECT * FROM [Categories]
+where CategoryID>1 and CategoryID<8
+order by CategoryID desc
