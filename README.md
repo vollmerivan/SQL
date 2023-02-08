@@ -18,7 +18,7 @@ limit 10
 Выполнение задание было на сайте https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_add
 
 SELECT * FROM [Categories]
-where CategoryID>1 and CategoryID<8
+where CategoryID>=2 and CategoryID<=7
 order by CategoryID desc
 
 ![Результат](https://github.com/vollmerivan/SQL/blob/main/assets/2.jpg)
