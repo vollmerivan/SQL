@@ -1,6 +1,7 @@
 # SQL
 
 1. Напишите SQL запрос, который выведет 10 заказов, отсортированных по убыванию даты их создания (OrderDate). 
+
 Выполнение задание было на сайте https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_add
 
 select OrderID, OrderDate, Customers.Customername from orders
