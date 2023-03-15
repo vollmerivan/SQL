@@ -1,25 +1,14 @@
 # SQL
 
-1. Напишите SQL запрос, который выведет 10 заказов, отсортированных по убыванию даты их создания (OrderDate). 
+ Таблицы, с которыми предстоит работать:: заказы (Orders) и клиенты (Customers), найти их можно тут:
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_asc
 
-Выполнение задание было на сайте https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_add
+Необходимо вывести id клиента и имя клиента, сделавших больше 5-ти заказов, а также количество заказов и дату последнего заказа. Список должен идти по убыванию от  клиентов с большим количеством заказов к клиентам с меньшим количеством заказов
 
-select OrderID, OrderDate, Customers.Customername from orders
-join Customers ON Orders.CustomerID = Customers.CustomerID
-order by OrderDate
-limit 10
+SELECT Customers.CustomerID, Customers.CustomerName, orders.OrderDate, COUNT (CustomerName) as kolichestvoZakazov FROM [Customers]
+JOIN Orders ON Orders.CustomerID = Customers.CustomerID
+GROUP BY CustomerName
+HAVING kolichestvoZakazov >= 6
+order by kolichestvoZakazov DESC
 
-![Результат](https://github.com/vollmerivan/SQL/blob/main/assets/1.jpg)
-
-2. Составьте SQL запрос:
-Выбрать все категории с ID от 2 до 7
-Таблица Categories, условие фильтрации CategoryID.
-(*) -  сортировка в порядке убывания .
-
-Выполнение задание было на сайте https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_add
-
-SELECT * FROM [Categories]
-where CategoryID>=2 and CategoryID<=7
-order by CategoryID desc
-
-![Результат](https://github.com/vollmerivan/SQL/blob/main/assets/2.jpg)
+![image](https://user-images.githubusercontent.com/108756609/225240317-66342c7e-b05f-4e61-9008-64a842f3e13f.png)
