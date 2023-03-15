@@ -11,7 +11,7 @@ limit 10
 ![Результат](https://github.com/vollmerivan/SQL/blob/main/assets/1.jpg)
 
 2. Составьте SQL запрос:
-Выбрать все категории с ИД от 2 до 7
+Выбрать все категории с ID от 2 до 7
 Таблица Categories, условие фильтрации CategoryID.
 (*) -  сортировка в порядке убывания .
 
